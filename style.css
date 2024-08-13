@@ -1,0 +1,112 @@
+/* Estilos básicos */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    box-sizing: border-box; /* Incluye padding y border en el cálculo del width y height */
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000; /* Asegura que el header esté encima del contenido */
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+section {
+    padding: 80px 20px 60px; /* Añade padding top para evitar el contenido bajo el header fijo y padding bottom para el footer */
+    background-color: #fff;
+    margin: 20px auto;
+    border-radius: 8px;
+    max-width: 1200px; /* Limita el ancho máximo */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Añade una sombra para mejorar la visibilidad */
+}
+
+.productos-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; /* Ajusta el espaciado entre los productos */
+}
+
+.producto {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    padding: 10px;
+    border-radius: 8px;
+    text-align: center;
+    width: calc(33.333% - 20px); /* 3 productos por fila con margen */
+    margin-bottom: 20px;
+    box-sizing: border-box; /* Incluye padding y border en el cálculo del width */
+}
+
+.producto img {
+    max-width: 100%; /* Ajusta el tamaño de las imágenes */
+    height: auto; /* Mantiene la proporción de las imágenes */
+    border-radius: 8px;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 20px;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    box-sizing: border-box;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 10px 0;
+    color: #fff;
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    text-align: center;
+}
+
+.btn:hover {
+    background-color: #0056b3;
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+    .producto {
+        width: calc(50% - 20px); /* 2 productos por fila en pantallas más pequeñas */
+    }
+}
+
+@media (max-width: 480px) {
+    .producto {
+        width: 100%; /* 1 producto por fila en pantallas muy pequeñas */
+    }
+}
+
+
+
