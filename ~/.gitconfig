@@ -1,0 +1,9 @@
+[user]
+git config --global user.name "Ferdox10"
+git config --global user.email "ferdoxlomejor@gmail.com"
+[core]
+    editor = code --wait
+[alias]
+    st = status
+    co = checkout
+    br = branch
